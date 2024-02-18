@@ -66,7 +66,7 @@ export default{
         'Authorization': `${token}`,
         'Content-Type': 'application/json' // Assuming JSON data is being sent
     };
-            axios.post('http://localhost:3000/events', 
+            axios.post('https://beacon-server.vercel.app/events', 
             eventData,{headers,timeout: 10000}).then(response=>{
                 if(response.status==201){
                     alert('Created succesfully');
