@@ -135,7 +135,7 @@ if (userChoice) {
         'Authorization': `${token}`,
         'Content-Type': 'application/json' // Assuming JSON data is being sent
     };
-axios.post('http://localhost:3000/events/deleteevent',
+axios.post('https://beacon-server.vercel.app/events/deleteevent',
 {
     title:title
 },{headers,timeout: 10000}).then(response=>{
@@ -174,7 +174,7 @@ axios.post('http://localhost:3000/events/deleteevent',
             const token = localStorage.getItem('token');
             const decodedToken = jwtDecode(token);
             const username = decodedToken.username;
-            axios.get(`http://localhost:3000/events/user?organizer=${username}`).then(response=>{
+            axios.get(`https://beacon-server.vercel.app/events/user?organizer=${username}`).then(response=>{
                 this.eventData=response.data;
 
                 
