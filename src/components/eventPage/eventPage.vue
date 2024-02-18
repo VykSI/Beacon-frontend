@@ -127,7 +127,7 @@ export default {
       const token = localStorage.getItem('token');
             const decodedToken = jwtDecode(token);
             this.username = decodedToken.username;
-      axios.get('http://localhost:3000/events')
+      axios.get('https://beacon-server.vercel.app/events')
         .then(response => {
           if (response.data) {
             this.eventData = response.data; // Update the eventData object with fetched data
