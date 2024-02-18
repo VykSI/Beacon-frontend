@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     registerUser(){
-        axios.post('http://localhost:3000/register', {
+        axios.post('https://beacon-server.vercel.app/register', {
         username: this.username,
         password: this.password,
         name:this.name,
@@ -86,7 +86,7 @@ export default {
   
     loginUser() {
         console.log(this.lusername);
-     axios.post('http://localhost:3000/login', {
+     axios.post('https://beacon-server.vercel.app/login', {
     username: this.lusername,
     password: this.lpassword,
   })
