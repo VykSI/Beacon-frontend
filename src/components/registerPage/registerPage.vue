@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     sendemail(){
-        axios.post('http://localhost:3000/register-event',
+        axios.post('https://beacon-server.vercel.app/register-event',
         {
             email:this.email,
             eventName:this.id
@@ -68,7 +68,7 @@ export default {
     fetchEventData() {
      
       // Construct the URL with the title parameter
-      const url = `http://localhost:3000/events/filter?title=${this.id}`;
+      const url = `https://beacon-server.vercel.app/events/filter?title=${this.id}`;
 
       // Fetch event data based on URL parameters
       axios.get(url)
