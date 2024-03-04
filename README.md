@@ -1,5 +1,7 @@
 # Beacon-frontend
 
+Demo Link: https://beacon-frontend.vercel.app/login/
+
 ## Vue-CLI Installation
 ```
 npm install -g @vue/cli
@@ -15,6 +17,7 @@ npm install
 npm run serve
 ```
 On running successfully proceed with either /login or /admin-login routes
+Change all apis to fetch data from backend correctly.
 
 ### Compiles and minifies for production
 ```
