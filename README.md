@@ -25,5 +25,15 @@ npm run build
 npm run lint
 ```
 
+### Routes
+```
+/admin-login
+/login
+/events
+/dashboard
+/register/?
+/create/?
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
