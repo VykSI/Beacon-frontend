@@ -1,4 +1,9 @@
-# frontend
+# Beacon-frontend
+
+## Vue-CLI Installation
+```
+npm install -g @vue/cli
+```
 
 ## Project setup
 ```
