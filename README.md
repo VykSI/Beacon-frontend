@@ -19,9 +19,6 @@ npm run build
 ```
 npm run lint
 ```
-### Run Frontend
-```
-npm serve
-```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
